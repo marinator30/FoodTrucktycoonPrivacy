@@ -1,292 +1,426 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Datenschutzerklärung für FoodTruckTycoon">
-  <title>Datenschutzerklärung – FoodTruckTycoon</title>
-  <style>
-    :root {
-      --bg: #10131a;
-      --panel: #191e28;
-      --panel2: #202735;
-      --text: #f4f1e8;
-      --muted: #b8bdc9;
-      --accent: #ffb52e;
-      --accent2: #e84b35;
-      --border: #343b4b;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      line-height: 1.7;
-    }
-    .hero {
-      padding: 64px 20px 44px;
-      text-align: center;
-      background:
-        linear-gradient(rgba(16,19,26,.86), rgba(16,19,26,.96)),
-        repeating-linear-gradient(
-          0deg,
-          transparent 0 7px,
-          rgba(255,181,46,.035) 7px 8px
-        );
-      border-bottom: 1px solid var(--border);
-    }
-    .logo {
-      display: inline-block;
-      padding: 8px 14px;
-      margin-bottom: 14px;
-      background: var(--accent2);
-      border: 3px solid #111;
-      box-shadow: 5px 5px 0 #000;
-      font-weight: 900;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(30px, 6vw, 52px);
-      line-height: 1.1;
-    }
-    .subtitle {
-      margin: 14px auto 0;
-      max-width: 700px;
-      color: var(--muted);
-    }
-    main {
-      width: min(900px, calc(100% - 32px));
-      margin: 36px auto 70px;
-    }
-    section {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 24px;
-      margin-bottom: 18px;
-    }
-    h2 {
-      margin-top: 0;
-      color: var(--accent);
-      font-size: 22px;
-    }
-    h3 { color: #fff; }
-    p, li { color: var(--muted); }
-    strong { color: var(--text); }
-    a { color: var(--accent); }
-    .notice {
-      background: var(--panel2);
-      border-left: 4px solid var(--accent);
-      padding: 14px 16px;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      color: #858c9b;
-      padding: 28px 16px 44px;
-      border-top: 1px solid var(--border);
-      font-size: 14px;
-    }
-    code {
-      background: #0c0f15;
-      padding: 2px 6px;
-      border-radius: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Datenschutzerklärung – FoodTruckTycoon</title>
+
+    <meta name="description"
+          content="Datenschutzerklärung für die iOS-App FoodTruckTycoon">
+
+    <style>
+        :root {
+            --bg: #10131a;
+            --card: #191e28;
+            --card2: #202735;
+            --text: #f4f1e8;
+            --muted: #b8bdc9;
+            --accent: #ffb52e;
+            --red: #e84b35;
+            --border: #343b4b;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px 50px;
+            border-bottom: 1px solid var(--border);
+            background:
+                linear-gradient(
+                    rgba(16, 19, 26, 0.88),
+                    rgba(16, 19, 26, 0.98)
+                );
+        }
+
+        .logo {
+            display: inline-block;
+            background: var(--red);
+            color: white;
+            border: 3px solid #000;
+            box-shadow: 5px 5px 0 #000;
+            padding: 10px 16px;
+            margin-bottom: 22px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(32px, 6vw, 54px);
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            max-width: 700px;
+            margin: 16px auto 0;
+            color: var(--muted);
+        }
+
+        main {
+            width: min(900px, calc(100% - 32px));
+            margin: 40px auto 70px;
+        }
+
+        section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 26px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 22px;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+        }
+
+        strong {
+            color: var(--text);
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        .notice {
+            background: var(--card2);
+            border-left: 4px solid var(--accent);
+            padding: 15px 18px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: #858c9b;
+            padding: 30px 16px 45px;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
 
-<header class="hero">
-  <div class="logo">FoodTruckTycoon</div>
-  <h1>Datenschutzerklärung</h1>
-  <p class="subtitle">
-    Informationen zum Datenschutz bei der Nutzung der iOS-App FoodTruckTycoon.
-  </p>
+<header>
+
+    <div class="logo">
+        FoodTruckTycoon
+    </div>
+
+    <h1>
+        Datenschutzerklärung
+    </h1>
+
+    <p class="subtitle">
+        Informationen zum Datenschutz bei der Nutzung
+        der iOS-App FoodTruckTycoon.
+    </p>
+
 </header>
+
 
 <main>
 
-  <section>
-    <h2>1. Verantwortlicher</h2>
-    <p>
-      Verantwortlich für die Verarbeitung personenbezogener Daten im Zusammenhang
-      mit FoodTruckTycoon ist:
-    </p>
-    <p>
-      <strong>[VOR- UND NACHNAME]</strong><br>
-      [ANSCHRIFT]<br>
-      [PLZ ORT]<br>
-      Deutschland
-    </p>
-    <p>
-      E-Mail: <a href="mailto:[E-MAIL-ADRESSE]">[E-MAIL-ADRESSE]</a>
-    </p>
-    <div class="notice">
-      <strong>Wichtig:</strong> Ersetze die Angaben in eckigen Klammern vor der
-      Veröffentlichung durch deine tatsächlichen Kontaktdaten.
-    </div>
-  </section>
+    <section>
 
-  <section>
-    <h2>2. Geltungsbereich</h2>
-    <p>
-      Diese Datenschutzerklärung gilt für die iOS-App
-      <strong>FoodTruckTycoon</strong> und beschreibt, welche personenbezogenen
-      Daten im Zusammenhang mit der Nutzung der App verarbeitet werden.
-    </p>
-  </section>
+        <h2>1. Verantwortlicher</h2>
 
-  <section>
-    <h2>3. Welche Daten verarbeitet FoodTruckTycoon?</h2>
-    <p>
-      FoodTruckTycoon ist als lokal auf dem Gerät laufendes Spiel konzipiert.
-      Nach aktuellem Stand werden durch die App selbst keine Benutzerkonten
-      benötigt und keine personenbezogenen Daten an den Entwickler übertragen.
-    </p>
-    <p>Insbesondere verarbeitet die App nach aktuellem Stand nicht:</p>
-    <ul>
-      <li>Name oder Anschrift des Nutzers</li>
-      <li>E-Mail-Adresse innerhalb der App</li>
-      <li>Kontakte oder Adressbücher</li>
-      <li>Standortdaten</li>
-      <li>Fotos oder Videos</li>
-      <li>Gesundheits- oder biometrische Daten</li>
-      <li>Werbeprofile oder Trackingdaten</li>
-    </ul>
-  </section>
+        <p>
+            Verantwortlich für die Verarbeitung personenbezogener Daten
+            im Zusammenhang mit FoodTruckTycoon ist:
+        </p>
 
-  <section>
-    <h2>4. Lokale Spieldaten</h2>
-    <p>
-      Spielstände, Einstellungen und andere für den Spielbetrieb erforderliche
-      Informationen können lokal auf dem Gerät gespeichert werden.
-    </p>
-    <p>
-      Diese lokalen Spieldaten werden nicht vom Entwickler über einen eigenen
-      Server empfangen oder ausgewertet.
-    </p>
-  </section>
+        <p>
+            <strong>Marius Witt</strong><br>
+            Deutschland
+        </p>
 
-  <section>
-    <h2>5. Analyse, Werbung und Tracking</h2>
-    <p>
-      Nach aktuellem Stand verwendet FoodTruckTycoon keine eigenen
-      Analysewerkzeuge, personalisierte Werbung oder Tracking-Technologien,
-      die Nutzerdaten an den Entwickler oder Werbepartner übertragen.
-    </p>
-    <p>
-      Sollte sich dies in einer zukünftigen Version ändern, wird diese
-      Datenschutzerklärung entsprechend aktualisiert und die Angaben zur
-      Datenverarbeitung in App Store Connect angepasst.
-    </p>
-  </section>
+        <div class="notice">
+            Bei Fragen zum Datenschutz kann der Verantwortliche über die
+            im Zusammenhang mit der App bereitgestellten Kontaktmöglichkeiten
+            kontaktiert werden.
+        </div>
 
-  <section>
-    <h2>6. Apple und App Store</h2>
-    <p>
-      FoodTruckTycoon wird über Apple und den App Store beziehungsweise
-      TestFlight bereitgestellt. Bei der Installation, Aktualisierung oder
-      Nutzung von App Store und TestFlight kann Apple personenbezogene Daten
-      nach den eigenen Datenschutzbestimmungen verarbeiten.
-    </p>
-    <p>
-      Für die Verarbeitung durch Apple ist Apple selbst verantwortlich.
-      Es gelten die Datenschutzbestimmungen von Apple:
-      <a href="https://www.apple.com/de/legal/privacy/" target="_blank" rel="noopener noreferrer">
-        Apple Datenschutz
-      </a>.
-    </p>
-  </section>
+    </section>
 
-  <section>
-    <h2>7. Rechtsgrundlage</h2>
-    <p>
-      Soweit durch die App selbst keine personenbezogenen Daten erhoben oder
-      an den Entwickler übermittelt werden, findet durch den Entwickler keine
-      entsprechende Verarbeitung personenbezogener Nutzerdaten statt.
-    </p>
-    <p>
-      Soweit eine Verarbeitung personenbezogener Daten aufgrund einer späteren
-      Funktion erforderlich wird, wird hierfür die jeweils einschlägige
-      Rechtsgrundlage nach der Datenschutz-Grundverordnung (DSGVO) berücksichtigt.
-    </p>
-  </section>
 
-  <section>
-    <h2>8. Speicherdauer und Löschung</h2>
-    <p>
-      Da FoodTruckTycoon nach aktuellem Stand keine personenbezogenen
-      Nutzerdaten auf eigenen Servern speichert, bestehen beim Entwickler
-      grundsätzlich keine personenbezogenen Nutzerkonten oder Serverprofile,
-      die auf Anfrage gelöscht werden müssten.
-    </p>
-    <p>
-      Lokal gespeicherte Spieldaten können durch das Löschen der App vom Gerät
-      entfernt werden, soweit sie nicht anderweitig durch das Betriebssystem
-      oder eine vom Nutzer aktivierte Gerätesicherung erhalten bleiben.
-    </p>
-  </section>
+    <section>
 
-  <section>
-    <h2>9. Rechte der betroffenen Personen</h2>
-    <p>
-      Soweit personenbezogene Daten verarbeitet werden, stehen betroffenen
-      Personen insbesondere die Rechte aus der DSGVO zu. Dazu können je nach
-      Einzelfall gehören:
-    </p>
-    <ul>
-      <li>Auskunft über gespeicherte personenbezogene Daten</li>
-      <li>Berichtigung unrichtiger Daten</li>
-      <li>Löschung von Daten</li>
-      <li>Einschränkung der Verarbeitung</li>
-      <li>Widerspruch gegen bestimmte Verarbeitungen</li>
-      <li>Datenübertragbarkeit, soweit die gesetzlichen Voraussetzungen erfüllt sind</li>
-    </ul>
-    <p>
-      Zur Ausübung dieser Rechte kann die oben angegebene Kontaktadresse
-      verwendet werden.
-    </p>
-  </section>
+        <h2>2. Geltungsbereich</h2>
 
-  <section>
-    <h2>10. Beschwerderecht</h2>
-    <p>
-      Betroffene Personen haben das Recht, sich bei einer Datenschutz-
-      Aufsichtsbehörde zu beschweren, wenn sie der Auffassung sind, dass eine
-      Verarbeitung personenbezogener Daten gegen geltendes Datenschutzrecht
-      verstößt.
-    </p>
-  </section>
+        <p>
+            Diese Datenschutzerklärung gilt für die iOS-App
+            <strong>FoodTruckTycoon</strong>.
+        </p>
 
-  <section>
-    <h2>11. Änderungen dieser Datenschutzerklärung</h2>
-    <p>
-      Diese Datenschutzerklärung kann angepasst werden, wenn sich die
-      Funktionen von FoodTruckTycoon, die eingesetzten technischen Dienste
-      oder die rechtlichen Anforderungen ändern.
-    </p>
-    <p>
-      Die jeweils aktuelle Fassung wird auf dieser Webseite veröffentlicht.
-    </p>
-  </section>
+        <p>
+            Sie informiert darüber, welche personenbezogenen Daten
+            bei der Nutzung der App verarbeitet werden.
+        </p>
 
-  <section>
-    <h2>12. Kontakt</h2>
-    <p>
-      Bei Fragen zum Datenschutz oder zur Verarbeitung personenbezogener Daten
-      kannst du dich an den Verantwortlichen unter der oben genannten
-      E-Mail-Adresse wenden.
-    </p>
-  </section>
+    </section>
+
+
+    <section>
+
+        <h2>3. Verarbeitung personenbezogener Daten</h2>
+
+        <p>
+            FoodTruckTycoon ist als lokal auf dem Gerät laufendes
+            Spiel konzipiert.
+        </p>
+
+        <p>
+            Nach aktuellem Stand benötigt die App kein eigenes
+            Benutzerkonto und übermittelt keine personenbezogenen Daten
+            an eigene Server des Entwicklers.
+        </p>
+
+        <p>
+            Die App erhebt nach aktuellem Stand insbesondere keine:
+        </p>
+
+        <ul>
+            <li>Namen oder Anschriften</li>
+            <li>E-Mail-Adressen innerhalb der App</li>
+            <li>Kontakte oder Adressbuchdaten</li>
+            <li>Standortdaten</li>
+            <li>Fotos oder Videos</li>
+            <li>Gesundheitsdaten</li>
+            <li>biometrischen Daten</li>
+            <li>Werbeprofile</li>
+            <li>Trackingdaten</li>
+        </ul>
+
+    </section>
+
+
+    <section>
+
+        <h2>4. Lokale Spieldaten</h2>
+
+        <p>
+            Für den Spielbetrieb erforderliche Informationen wie
+            Spielstände, Einstellungen, Fortschritt und Spieldaten
+            können lokal auf dem Gerät gespeichert werden.
+        </p>
+
+        <p>
+            Diese Daten werden nach aktuellem Stand nicht über eigene
+            Server des Entwicklers empfangen, gespeichert oder ausgewertet.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>5. Analyse, Werbung und Tracking</h2>
+
+        <p>
+            FoodTruckTycoon verwendet nach aktuellem Stand keine eigenen
+            Analysewerkzeuge, personalisierte Werbung oder Tracking-
+            Technologien, die Nutzerdaten an den Entwickler oder
+            Werbepartner übertragen.
+        </p>
+
+        <p>
+            Sollte zukünftig eine solche Funktion integriert werden,
+            wird diese Datenschutzerklärung entsprechend aktualisiert.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>6. Apple, App Store und TestFlight</h2>
+
+        <p>
+            FoodTruckTycoon wird über Apple, den App Store und
+            gegebenenfalls TestFlight bereitgestellt.
+        </p>
+
+        <p>
+            Apple kann im Zusammenhang mit der Nutzung des App Store,
+            TestFlight, der Installation oder Aktualisierung der App
+            personenbezogene Daten nach den eigenen
+            Datenschutzbestimmungen verarbeiten.
+        </p>
+
+        <p>
+            Für diese Verarbeitung ist Apple verantwortlich.
+        </p>
+
+        <p>
+            Weitere Informationen findest du in der
+            <a
+                href="https://www.apple.com/de/legal/privacy/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Datenschutzerklärung von Apple
+            </a>.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>7. Rechtsgrundlage</h2>
+
+        <p>
+            Soweit durch FoodTruckTycoon selbst keine personenbezogenen
+            Daten erhoben oder an den Entwickler übermittelt werden,
+            findet durch den Entwickler keine entsprechende Verarbeitung
+            personenbezogener Nutzerdaten statt.
+        </p>
+
+        <p>
+            Sollte zukünftig eine Verarbeitung personenbezogener Daten
+            erforderlich werden, erfolgt diese auf Grundlage der jeweils
+            einschlägigen gesetzlichen Vorschriften, insbesondere der
+            Datenschutz-Grundverordnung (DSGVO).
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>8. Speicherdauer und Löschung</h2>
+
+        <p>
+            Da FoodTruckTycoon nach aktuellem Stand keine personenbezogenen
+            Nutzerdaten auf eigenen Servern speichert, bestehen beim
+            Entwickler grundsätzlich keine persönlichen Nutzerkonten
+            oder Serverprofile.
+        </p>
+
+        <p>
+            Lokal gespeicherte Spieldaten können durch das Löschen der
+            App vom Gerät entfernt werden, soweit sie nicht anderweitig
+            durch das Betriebssystem oder eine vom Nutzer aktivierte
+            Gerätesicherung erhalten bleiben.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>9. Rechte betroffener Personen</h2>
+
+        <p>
+            Soweit personenbezogene Daten verarbeitet werden, stehen
+            betroffenen Personen insbesondere die Rechte aus der DSGVO zu.
+        </p>
+
+        <ul>
+            <li>Recht auf Auskunft</li>
+            <li>Recht auf Berichtigung</li>
+            <li>Recht auf Löschung</li>
+            <li>Recht auf Einschränkung der Verarbeitung</li>
+            <li>Recht auf Widerspruch</li>
+            <li>Recht auf Datenübertragbarkeit</li>
+        </ul>
+
+        <p>
+            Zur Ausübung dieser Rechte kann der Verantwortliche über die
+            im Zusammenhang mit der App bereitgestellten
+            Kontaktmöglichkeiten kontaktiert werden.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>10. Beschwerderecht</h2>
+
+        <p>
+            Betroffene Personen haben das Recht, sich bei einer
+            Datenschutz-Aufsichtsbehörde zu beschweren, wenn sie der
+            Auffassung sind, dass die Verarbeitung personenbezogener
+            Daten gegen geltendes Datenschutzrecht verstößt.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>11. Änderungen dieser Datenschutzerklärung</h2>
+
+        <p>
+            Diese Datenschutzerklärung kann angepasst werden, wenn sich
+            die Funktionen von FoodTruckTycoon, die eingesetzten
+            technischen Dienste oder die rechtlichen Anforderungen ändern.
+        </p>
+
+        <p>
+            Die jeweils aktuelle Version wird auf dieser Webseite
+            veröffentlicht.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>12. Kontakt</h2>
+
+        <p>
+            Bei Fragen zum Datenschutz kann der Verantwortliche über
+            die im Zusammenhang mit FoodTruckTycoon bereitgestellten
+            Kontaktmöglichkeiten kontaktiert werden.
+        </p>
+
+    </section>
 
 </main>
 
+
 <footer>
-  <div>FoodTruckTycoon</div>
-  <div>Datenschutzerklärung · Stand: 19. September 2026</div>
+
+    <div>
+        <strong>FoodTruckTycoon</strong>
+    </div>
+
+    <div>
+        Datenschutzerklärung · Stand: 19. September 2026
+    </div>
+
 </footer>
 
 </body>
